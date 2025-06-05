@@ -1,0 +1,28 @@
+#-*-coding:utf8;-*-
+#qpy:console
+def espaco():
+    print ("")
+espaco()
+
+planetas = ["Mercúrio", "Vênus", "Terra", "Marte", "Júpiter", "Saturno", "Urano","Netuno"]
+
+for planeta in planetas:
+    print (planeta) 
+planetas.append ("Plutão")#append adiciona um item no final da lista. lista
+
+espaco()
+
+print (planetas)#sem o for percorrendo a lista 
+                #o print e feito da lista como ela é formada.
+                
+espaco ()
+
+for planeta in planetas:
+    print (planeta)
+espaco()
+
+planetas.insert (3,"Marcio") 
+
+for planeta in planetas: 
+
+    print (planeta)
