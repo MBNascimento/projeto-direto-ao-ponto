@@ -1,4 +1,7 @@
 print("")
+"""o programa não atende a válidação pois veerifica somente uma condiçao"""
+"""(se o válido)"""
+"""o código montanha_russa_cricri2 resolve o problema"""
 idade = 19
 altura = 1.6
 ticket_valido = True

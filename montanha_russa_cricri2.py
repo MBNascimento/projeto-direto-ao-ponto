@@ -1,12 +1,11 @@
 print(" ")
-
-idade = 19
-altura = 1.6
+# versão com while e input para validação da montanha_russa_cricri
+idade = int(input("Idade : "))
+altura = float(input("altura : "))
 ticket_valido = True
-if ticket_valido:
-    print("Seu ticket é válido")
-    if idade > 18 and altura > 1.5:
-        print("Entrada permitida")
+while ticket_valido and idade > 18 and altura > 1.5:
+    print("Ticket Válido, Entrada permitida")
+    break
 else:
     print("Requisitos não atendidos")
 
