@@ -23,3 +23,13 @@ repetidos_ordenados = sorted(
 # Exibe os resultados
 for numero, quantidade in repetidos_ordenados:
     print(f"O número {numero} se repete {quantidade} vezes.")
+
+# Suponha que sua lista de 2000 números seja chamada `lista`
+lista = list(range(1, 2001))  # Exemplo: números de 1 a 2000
+
+# Dividir em sublistas de 6 elementos mantendo a ordem
+sublistas = [lista[i:i+6] for i in range(0, len(lista), 6)]
+
+# Exibir as primeiras 5 sublistas como exemplo
+for i, sublista in enumerate(sublistas[:5]):
+    print(f"Sublista {i+1}: {sublista}")
