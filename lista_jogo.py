@@ -25,7 +25,7 @@ for numero, quantidade in repetidos_ordenados:
     print(f"O número {numero} se repete {quantidade} vezes.")
 
 # Suponha que sua lista de 2000 números seja chamada `lista`
-lista = list(range(1, 2001))  # Exemplo: números de 1 a 2000
+lista = list(range(1, 1397))  # Exemplo: números de 1 a 2000
 
 # Dividir em sublistas de 6 elementos mantendo a ordem
 sublistas = [lista[i:i+6] for i in range(0, len(lista), 6)]
