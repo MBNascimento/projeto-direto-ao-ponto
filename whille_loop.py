@@ -1,6 +1,6 @@
 #-*-coding:utf8;-*-
 #qpy:console
-#while loop.py
+#while_loop.py
 print("")
 print( "This is console module")
 print("")
