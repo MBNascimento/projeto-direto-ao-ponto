@@ -1,0 +1,52 @@
+#formatacao_de_strings.py
+#-*-coding:utf8;-*-
+#qpy:console
+
+print( )
+# o velho estilo, operador por módulo % .
+
+nome = 'Ritchie'
+mensagens = 5 # tipo int
+print(' Bem vindo, %s' % nome)
+print( )
+# veja que o %s é substituído por uma string,o %i por um inteiro
+# a ordem dos argumentos entre parênteses importa
+print(' %s, você tem %i mensagens novas' % (nome, mensagens))
+print( )
+# o estilo um pilouco mais novo , str.format()
+# i python3 introduziu um novo jeito de formatar 
+# o str.format(), a substituição agora é indicada com chaves.
+
+nome = 'Marcio'
+mensagens = 4 # tipo int
+print(' Bem vindo, {}' .format(nome))
+print( )
+print(' {}, você tem {} mensagens novas' .format(nome, mensagens))
+print( )
+
+# a cada argumento dentro da função format é associado um índice.
+# podemos utilizar esses  índices para controlar a ordem das substituições.
+print('Era uma vez um {0} e um {1}' .format("leão", "rato"))
+print( )
+print('Era um vez um {1} e um {0}' .format("leão", "rato"))
+print( )
+
+# além de lidar com argumentos pisicionais, o str.format também lida com argumentos por nome.
+print('Era uma vez um {pt} e um {0}' .format("gato", pt = "pato"))
+print( )
+
+# vamos formatar um valor de float:
+print('O valor de pi é de  {' '}' .format(3.14159))
+print( )
+
+# para apresentarmos o valor com apenas duas casas decimais podemos utilizar a sintaxe abaixo.
+print('O valor do pi é de {: .2f}' . format(3.14159))
+print( )
+
+# o f indica que estamos lidando com um float, o .2 que queremos duas casas decimais
+# o : está lá para reservar um espaço para o índice, 
+# essa sintaxe pode ser expressa como {identificador:conversão}, como abaixo.
+# os valores 0 e 1 são índices utilizados para ordenar os valores.
+print('O número áureo é {1:.2f} o número pi é {0:.2f}' .format(3.14159, 1.6180))
+print( )
+
