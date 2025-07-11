@@ -1,4 +1,4 @@
-# f-string.py
+# f-strings.py
 #-*-coding:utf8;-*-
 #qpy:console
 
